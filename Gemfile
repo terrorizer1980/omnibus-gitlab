@@ -44,7 +44,7 @@ end
 
 group :test do
   gem 'byebug'
-  gem 'chefspec'
+  gem 'chefspec', '>= 9.1.0'
   gem 'omnibus-ctl', '0.3.6'
   gem 'fantaskspec'
   gem 'rspec_junit_formatter'
