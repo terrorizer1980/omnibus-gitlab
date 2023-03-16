@@ -39,7 +39,7 @@ group :packagecloud, optional: true do
 end
 
 group :rubocop do
-  gem 'gitlab-styles', '~> 6.1', require: false
+  gem 'gitlab-styles', '~> 6.1', '>= 6.1.0', require: false
 end
 
 group :test do
