@@ -24,7 +24,7 @@ gem 'omnibus', git: omnibus_gem_version.remote, tag: omnibus_gem_version.print(f
 gem 'chef', '~> 15.14.0'
 gem 'ohai', '~> 15.12.0'
 gem 'rainbow', '~> 2.2' # This is used by gitlab-ctl and the chef formatter
-gem 'thor', '0.18.1' # This specific version is required by package_cloud
+gem 'thor', '1.4.0' # This specific version is required by package_cloud
 gem 'json'
 gem 'rspec'
 gem 'rake'
@@ -35,7 +35,7 @@ gem 'aws-sdk-ec2'
 gem 'aws-sdk-marketplacecatalog'
 
 group :packagecloud, optional: true do
-  gem 'package_cloud'
+  gem 'package_cloud', '>= 0.3.09'
 end
 
 group :rubocop do
